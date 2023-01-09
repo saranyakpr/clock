@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Clock</title>
+	<link rel="stylesheet" href="clock.css">
+</head>
+<body>
+<div class="outerClock">
+   <div class="innerClock">
+      <div class="circle"></div>
+	  <div id="hour"></div>
+	  <div id="min"></div>
+	  <div id="sec"></div>
+   </div>
+   <div class="time">
+      <p>12</p>
+	  <p>3</p>
+	  <p>6</p>
+	  <p>9</p>
+   </div>
+</div>
+
+   
+</body>
+</html>
+<script>
+      setInterval(()=>{
+	     d = new Date();
+		 hhour = d.getHours();
+         hmin = d.getMinutes();
+         hsec = d.getSeconds();
+
+        hourrot = 30*hhour + hmin/2;
+        minrot = 6*hmin;
+        secrot = 6*sec;
+
+        sec.style.transform = 'rotate(${secrot}deg)';
+        min.style.transform = 'rotate(${minrot}deg)';
+        hour.style.transform = 'rotate(${hourrot}deg)';		
+	  },1000)
+   </script>
