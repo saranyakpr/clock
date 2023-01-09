@@ -1,0 +1,91 @@
+body{
+	background-color:#93e2f0;
+	cursor:pointer;
+}
+.outerClock{
+	width:350px;
+	height:350px;
+	background-color:#e5e5e5;
+	box-shadow:6px 6px 8px gray, -6px -6px 8px white;
+	position:relative;
+	margin-left:35%;
+	margin-top:10%;
+	border-radius:50%;
+}
+.innerClock{
+	width:280px;
+	height:280px;
+	position:absolute;
+	top:10%;
+	left:10%;
+	background-color:red;
+	border-radius:50%;
+	background-color:black;
+	background-size:cover;
+}
+.circle{
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:46%;
+	left:46%;
+	background-color:white;
+	border-radius:50%;
+	z-index:4;
+}
+#hour{
+	width:10px;
+	height:75px;
+	background-color:white;
+	position:absolute;
+	top:24%;
+	left:47%;
+	border-radius:50% 50% 0% 0%;
+	transform-origin:bottom;
+	z-index:2;
+}
+#min{
+	width:8px;
+	height:11px;
+	background-color:white;
+	position:absolute;
+	top:11%;
+	left:47%;
+	border-radius:50% 50% 0% 0%;
+	transform-origin:bottom;
+	z-index:1;
+}
+#sec{
+	width:5px;
+	height:120px;
+	background-color:white;
+	position:absolute;
+	top:8%;
+	left:48%;
+	transform-origin:bottom;
+	z-index:3;
+}
+.time p{
+	font-size:30px;
+	font-weight:bold;
+}
+.time p:nth-child(1){
+	position:absolute;
+	top:-29px;
+	left:155px;
+}
+.time p:nth-child(2){
+	position:absolute;
+	top:120px;
+	left:325px;
+}
+.time p:nth-child(3){
+	position:absolute;
+	top:285px;
+	left:175px;
+}
+.time p:nth-child(4){
+	position:absolute;
+	top:120px;
+	left:10px;
+}
